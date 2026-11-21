@@ -6,7 +6,7 @@
     <title>MAQ Servicios Integrales | 20 Años de Experiencia</title>
     <link rel="icon" href="favicon.png" type="image/png">
     
-    <!-- Meta etiquetas Open Graph (Para previsualización en WhatsApp y Redes) -->
+    <!-- Meta etiquetas Open Graph -->
     <meta property="og:title" content="MAQ Servicios Integrales">
     <meta property="og:description" content="Soluciones integrales, personal capacitado y servicios a medida para el sector agropecuario, industrial y mantenimiento general.">
     <meta property="og:image" content="fondo-hero.jpg">
@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Library (Animaciones al hacer scroll) -->
+    <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
@@ -64,7 +64,7 @@
         .nav-menu { display: flex; gap: 25px; }
         .nav-menu li a { font-weight: 600; font-size: 14px; text-transform: uppercase; }
         .nav-menu li a:hover { color: var(--primary-color); }
-        .hamburger { display: none; cursor: pointer; font-size: 24px; }
+        .hamburger { display: none; cursor: pointer; font-size: 26px; color: var(--secondary-color); }
 
         /* Hero Section */
         .hero {
@@ -82,7 +82,7 @@
             padding-bottom: 100px;
         }
 
-        .hero h1 { font-size: 55px; margin-bottom: 30px; letter-spacing: -1px; }
+        .hero h1 { font-size: 55px; margin-bottom: 30px; letter-spacing: -1px; line-height: 1.2; }
         .hero h1 span { color: var(--primary-color); }
 
         .btn {
@@ -153,7 +153,7 @@
 
         /* Infrastructure */
         .infra-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
-        .infra-card { text-align: center; padding: 30px 20px; border: 1px solid #eee; border-radius: 10px; }
+        .infra-card { text-align: center; padding: 30px 20px; border: 1px solid #eee; border-radius: 10px; background: var(--white); }
         .infra-icon {
             width: 70px; height: 70px; background-color: var(--primary-color); color: var(--white);
             border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; margin: 0 auto 20px;
@@ -166,17 +166,17 @@
         .carousel-track:hover { animation-play-state: paused; }
         @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-50% - 15px)); } }
         .client-card {
-            width: 250px; background: var(--white); border-bottom: 3px solid var(--primary-color); padding: 20px;
+            width: 220px; background: var(--white); border-bottom: 3px solid var(--primary-color); padding: 20px;
             border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); display: flex; flex-direction: column;
-            align-items: center; justify-content: center; text-align: center; flex-shrink: 0; height: 150px;
+            align-items: center; justify-content: center; text-align: center; flex-shrink: 0; height: 140px;
         }
-        .client-card img { width: 100%; height: 70px; object-fit: contain; margin-bottom: 15px; }
-        .client-card h4 { color: var(--secondary-color); font-size: 15px; margin: 0; }
+        .client-card img { width: 100%; height: 60px; object-fit: contain; margin-bottom: 12px; }
+        .client-card h4 { color: var(--secondary-color); font-size: 14px; margin: 0; }
 
         /* Información Adicional Grid */
-        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 60px; padding-top: 50px; border-top: 1px solid #e0e0e0; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-top: 50px; padding-top: 50px; border-top: 1px solid #e0e0e0; }
         .info-card { display: flex; flex-direction: column; align-items: center; text-align: center; }
-        .info-card i { font-size: 45px; color: var(--primary-color); margin-bottom: 15px; }
+        .info-card i { font-size: 40px; color: var(--primary-color); margin-bottom: 15px; }
 
         /* Formulario de Contacto Funcional */
         .contact-form-container { max-width: 800px; margin: 0 auto; background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 5px 25px rgba(0,0,0,0.05); }
@@ -190,11 +190,11 @@
         /* Footer */
         footer { background-color: var(--secondary-color); color: var(--white); padding: 60px 0 20px; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
-        .footer-col h3 { color: var(--primary-color); margin-bottom: 20px; }
-        .footer-col p { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; color: #cccccc; }
+        .footer-col h3 { color: var(--primary-color); margin-bottom: 20px; font-size: 18px; }
+        .footer-col p { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; color: #cccccc; font-size: 14px;}
         .social-links { display: flex; gap: 15px; margin-top: 20px; }
-        .social-links a { display: inline-flex; justify-content: center; align-items: center; width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; color: var(--white); }
-        .social-links a:hover { background: var(--primary-color); }
+        .social-links a { display: inline-flex; justify-content: center; align-items: center; width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; color: var(--white); transition: 0.3s;}
+        .social-links a:hover { background: var(--primary-color); transform: translateY(-3px); }
         .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 14px; color: #999; }
 
         /* Botón Flotante WhatsApp */
@@ -206,21 +206,47 @@
         }
         .whatsapp-btn:hover { transform: scale(1.1); color: #FFF; }
 
-        /* Responsive */
+        /* =========================================
+           RESPONSIVE (VISTA PARA CELULARES MEJORADA)
+           ========================================= */
         @media (max-width: 768px) {
+            /* Menú hamburguesa más estilizado */
             .nav-menu {
                 position: absolute; top: 80px; left: -100%; flex-direction: column; background-color: var(--white);
-                width: 100%; text-align: center; transition: 0.3s; box-shadow: 0 10px 10px rgba(0,0,0,0.1); padding: 20px 0;
+                width: 100%; text-align: center; transition: 0.3s; box-shadow: 0 10px 15px rgba(0,0,0,0.1); padding: 20px 0; border-top: 1px solid #eee;
             }
             .nav-menu.active { left: 0; }
+            .nav-menu li { margin-bottom: 15px; }
+            .nav-menu li a { font-size: 16px; display: block; padding: 10px; }
             .hamburger { display: block; }
-            .hero h1 { font-size: 40px; }
-            .stats-wrapper { margin-top: -30px; }
-            .stats-container { grid-template-columns: 1fr; }
-            .stat-box { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.1); padding: 30px 20px; }
+            
+            /* Ajustes en márgenes y contenedores */
+            .container { width: 92%; }
+            section { padding: 50px 0; } /* Secciones más juntas */
+            
+            /* Textos más adaptados a móvil */
+            .hero h1 { font-size: 36px; margin-bottom: 20px; }
+            .section-title { margin-bottom: 35px; }
+            .section-title h2 { font-size: 28px; }
+            
+            /* Barra de estadísticas vertical y fluida */
+            .stats-wrapper { margin-top: -40px; }
+            .stats-container { grid-template-columns: 1fr; border-radius: 10px; }
+            .stat-box { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.1); padding: 25px 15px; }
             .stat-box:last-child { border-bottom: none; }
-            .about-grid { grid-template-columns: 1fr; }
-            .form-row { flex-direction: column; }
+            .stat-icon { font-size: 28px; margin-bottom: 10px; }
+            .stat-number { font-size: 40px; }
+            .stat-text { font-size: 14px; }
+            
+            /* Cuadrículas en 1 columna */
+            .about-grid, .services-grid, .infra-grid { grid-template-columns: 1fr; gap: 25px; }
+            
+            /* Formulario */
+            .contact-form-container { padding: 25px 20px; }
+            .form-row { flex-direction: column; gap: 15px; margin-bottom: 15px; }
+            
+            /* Botón WhatsApp sutilmente más chico */
+            .whatsapp-btn { width: 50px; height: 50px; bottom: 20px; right: 20px; font-size: 28px; }
         }
     </style>
 </head>
@@ -364,7 +390,7 @@
                     <div class="infra-icon"><i class="fas fa-screwdriver-wrench"></i></div>
                     <ul style="text-align: left; padding-left: 20px; color: var(--text-light);">
                         <li>Soplador y aspirador a explosión.</li>
-                        <li>Herramientas manuales varias (serruchos, sierras, tijeras de podar).</li>
+                        <li>Herramientas manuales varias (serruchos, sierras).</li>
                     </ul>
                 </div>
                 <div class="infra-card" data-aos="zoom-in" data-aos-delay="300">
@@ -387,6 +413,7 @@
             
             <div class="carousel-container" data-aos="fade-in">
                 <div class="carousel-track">
+                    <!-- GRUPO 1 -->
                     <div class="client-card"><img src="logo-adecco.png" onerror="this.src='https://placehold.co/150x80/e0e0e0/333?text=logo-adecco.png'" alt="Adecco"><h4>ADECCO AGRO</h4></div>
                     <div class="client-card"><img src="logo-lartirigoyen.png" onerror="this.src='https://placehold.co/150x80/e0e0e0/333?text=logo-lartirigoyen.png'" alt="Lartirigoyen"><h4>LARTIRIGOYEN</h4></div>
                     <div class="client-card"><img src="logo-maniagro.png" onerror="this.src='https://placehold.co/150x80/e0e0e0/333?text=logo-maniagro.png'" alt="Maniagro"><h4>MANIAGRO SA</h4></div>
@@ -399,6 +426,7 @@
                     <div class="client-card"><img src="logo-adecocampo.png" onerror="this.src='https://placehold.co/150x80/e0e0e0/333?text=logo-adecocampo.png'" alt="Adeco Campo"><h4>ADECO AGRO: CAMPO</h4></div>
                     <div class="client-card"><img src="logo-carmen.png" onerror="this.src='https://placehold.co/150x80/e0e0e0/333?text=logo-carmen.png'" alt="El Carmen"><h4>CRIADERO EL CARMEN</h4></div>
 
+                    <!-- GRUPO 2 PARA EL BUCLE INFINITO -->
                     <div class="client-card"><img src="logo-adecco.png" onerror="this.src='https://placehold.co/150x80/e0e0e0/333?text=logo-adecco.png'" alt="Adecco"><h4>ADECCO AGRO</h4></div>
                     <div class="client-card"><img src="logo-lartirigoyen.png" onerror="this.src='https://placehold.co/150x80/e0e0e0/333?text=logo-lartirigoyen.png'" alt="Lartirigoyen"><h4>LARTIRIGOYEN</h4></div>
                     <div class="client-card"><img src="logo-maniagro.png" onerror="this.src='https://placehold.co/150x80/e0e0e0/333?text=logo-maniagro.png'" alt="Maniagro"><h4>MANIAGRO SA</h4></div>
@@ -440,7 +468,7 @@
         </div>
     </section>
 
-    <!-- FORMULARIO DE CONTACTO FUNCIONAL -->
+    <!-- FORMULARIO DE CONTACTO -->
     <section id="contacto">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
@@ -449,7 +477,6 @@
             </div>
             
             <div class="contact-form-container">
-                <!-- IMPORTANTE: Reemplaza "TU_CODIGO_AQUI" por el link que te da formspree.io -->
                 <form action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST">
                     <div class="form-row">
                         <input type="text" name="nombre" placeholder="Nombre completo *" required>
@@ -482,10 +509,10 @@
                 </div>
                 <div class="footer-col">
                     <h3>Contacto Directo</h3>
-                    <p><i class="fas fa-phone"></i> Miguel A. Quiroga: 0358-154296141</p>
-                    <p><i class="fas fa-phone"></i> Mariano Quiroga: 0358-154387137</p>
+                    <p><i class="fas fa-phone"></i> 0358-154296141</p>
+                    <p><i class="fas fa-phone"></i> 0358-154387137</p>
                     <p><i class="fas fa-envelope"></i> miguel_quiroga@live.com.ar</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Carlos Galvalisi 122 - Carnerillo - Córdoba</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Carlos Galvalisi 122 - Carnerillo</p>
                 </div>
                 <div class="footer-col">
                     <h3>Síguenos</h3>
@@ -512,10 +539,8 @@
     <!-- Librería AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Inicializar animaciones de scroll
         AOS.init({ once: true, duration: 800, offset: 100 });
 
-        // Animación de Menú Móvil
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
 
@@ -524,10 +549,8 @@
             link.addEventListener('click', () => { navMenu.classList.remove('active'); });
         });
 
-        // Animación de Conteo de Estadísticas
         const counters = document.querySelectorAll('.counter');
         const speed = 200; 
-
         counters.forEach(counter => {
             const updateCount = () => {
                 const target = +counter.getAttribute('data-target');
